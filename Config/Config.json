@@ -1,0 +1,9 @@
+{
+  "inputPath": "data/donnees.csv",
+  "filterColumn": "nom",
+  "filterValue": "Vernet",
+  "outputFormat": "parquet",
+  "outputPath": "test3"
+
+
+}
