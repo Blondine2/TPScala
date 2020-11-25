@@ -19,7 +19,7 @@ object Service3 {
     implicit val spark: SparkSession = SparkSession.builder().master("local").getOrCreate()
     val df = SparkReaderWriter.readData(inputPath, inputFormat)
     val df2 = df.filter(col("Client ID") === idClient)
-    val df3 = df2.write.csv("data/data1.csv")
+    val df3 = df2.write.csv("data/data2.csv")
 
     val smtpHost = "smtp.gmail.com"
 
